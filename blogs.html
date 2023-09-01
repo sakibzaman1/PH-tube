@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
+
 <body class="max-w-screen-2xl mx-auto p-12">
     <header>
         <!-- navbar -->
@@ -26,5 +28,55 @@
 
         <hr class="mt-10">
     </header>
+    <main>
+        <section class="mt-10">
+            <div class="shadow-xl p-10">
+                <h1 class="text-5xl">Scope of Var, Let & Const</h1>
+                <hr class="mt-6">
+                <h4 class="mt-8">Scope determines the accessibility of variables. <br>
+                    JavaScript has 3 types of scope:
+                    <ul class="italic mt-3">
+                        <li>Block scope</li>
+                        <li>Function scope</li>
+                        <li>Global scope</li>
+                    </ul>
+                </h4>
+                <p class="mt-5">
+                    <span class="font-bold">Var</span> : Variables declared with the var keyword inside a { } block can be accessed from outside the block.
+                    Variables declared with the var keyword inside a function are not accessible (visible) from outside the function.
+                    Variables declared with the var keyword outside a function can be accessed from anywhere in a JavaScript program.
+                </p>
+                <p class="mt-5">
+                    <span class="font-bold">Let</span> : Variables declared with the let keyword inside a { } block can not be accessed from outside the block.
+                    Variables declared with the let keyword inside a function are not accessible (visible) from outside the function.
+                    Variables declared with the let keyword outside a function can be accessed from anywhere in a JavaScript program.
+                </p>
+                <p class="mt-5">
+                    <span class="font-bold">Const</span>: Variables declared with the const keyword inside a { } block can not be accessed from outside the block.
+                    Variables declared with the const keyword inside a function are not accessible (visible) from outside the function.
+                    Variables declared with the const keyword outside a function can be accessed from anywhere in a JavaScript program.
+                </p>
+            </div>
+            <div class="shadow-xl p-10 mt-10">
+                <h1 class="text-5xl">Use case of null & undefined</h1>
+                <hr class="mt-6">
+                <p class="mt-8">
+                    <span class="font-bold">Null</span> : Null is an object in JavaScript. It is one of JavaScript's primitive values and is treated as falsy for boolean operations. A null value in JavaScript is used for referring intentional absence of any object value and if any function or variable returns null, then we can say that the object could not be created.
+                </p>
+
+                <p class="mt-5">
+                    <span class="font-bold">Undefined</span> : An undefined variable or anything without a value always returns "undefined" in JavaScript. When a variable is declared and not initialized or not assigned with any value. We will receive undefined when accessing uninitialized variables, non-existing object properties, non-existing array elements, and alike.
+                </p>
+            </div>
+            <div class="shadow-xl p-10 mt-10">
+                <h1 class="text-5xl">REST API</h1>
+                <hr class="mt-6">
+                <p class="mt-8">
+                    API stands for APPLICATION PROGRAMMING INTERFACE & REST stands for REPRESENTATIONAL STATE TRANSFER.REST API is also called a “RESTful” API. It is a specific type of API. When a client requests a resource using a REST API, the server transfers back the current state of the resource in a standardized representation.RESTful APIs use HTTP requests to interact with data, while traditional APIs can use a variety of protocols.
+                </p>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
