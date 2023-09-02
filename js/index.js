@@ -13,7 +13,7 @@ const handleCategory = async () => {
     // console.log(category);
     const div = document.createElement('div');
     div.innerHTML = `
-        <a onclick="handleLoadVideo( '${category.category_id}' ) " ><button class="btn rounded-sm text-sm w-24 font-semibold"> ${category.category} </button></a>
+        <a onclick="handleLoadVideo( '${category.category_id}' )" ><button class="btn rounded-sm text-sm w-24 font-semibold"> ${category.category} </button></a>
         `;
     tabContainer.appendChild(div);
   })
@@ -24,7 +24,7 @@ const handleCategory = async () => {
 const handleLoadVideo = async (categoryId) => {
   const res = await fetch(`https://openapi.programming-hero.com/api/videos/category/${categoryId}`);
   const data = await res.json();
-  // console.log(data.data);
+  // console.log(data.data);  
 
   // load card data
 
@@ -142,7 +142,7 @@ function toHoursAndMinutes(totalSeconds) {
 
 const handleSort = async () => {
 
-    const res = await fetch(`https://openapi.programming-hero.com/api/videos/category/1000`);
+  const res = await fetch(`https://openapi.programming-hero.com/api/videos/category/1000`);
   const data = await res.json();
   // console.log(data.data);
   const sortedData = data.data.sort((a, b) => parseFloat(b.others.views) - parseFloat(a.others.views));
@@ -244,9 +244,10 @@ const handleSort = async () => {
     })
   }
 
-  
+
 
 }
+
 
 // temporal call
 handleCategory();
